@@ -1,0 +1,38 @@
+<div class="img">
+    <div class="main-container">
+        <div class="header1">
+            <span>Canteen Management system</span>
+        </div>
+        <div class="container">
+            <h2 class="head">Today's Special</h2>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <!-- <th>Select</th> -->
+                        <th>Id</th>
+                        <th>Item name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr *ngFor="let it of item"> -->
+                    <tr *ngFor="let it of item">
+                        <!-- <td><input type="checkbox"></td> -->
+                        <td>{{it.id}}</td>
+                        <td>{{it.name}}</td>
+                        <td>{{it.quantity}}</td>
+                        <td>{{it.price}}</td>
+                        <td>
+                            <button type="button" class="btn btn-success" (click)="buyItem(it)">Buy</button>&nbsp;&nbsp;
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-success" routerLink="/employee">Back</button>
+        </div>
+    </div>
+</div>

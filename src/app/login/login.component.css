@@ -1,0 +1,42 @@
+.img{
+    background: url(../../assets/bg3.jpg);
+    background-size: 100%;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(150vh - 103px);
+}
+.main-container{
+    margin-right: 180px;
+    left: 100px;
+    right: auto;
+    align-items: center;
+    align-content: center;
+    border: #1a1818;
+    /* box-shadow: 0 6px 6px rgba(3, 3, 3, 0.6); */
+    font-family: Georgia;
+}
+.form{
+    flex-direction: column;
+    margin: auto;
+    padding: 150px;
+    padding-left: 400px;
+    align-items: center;
+    width: 800px;
+    color: rgb(26, 29, 29);
+    font-weight: bold;
+    /* font-size: large; */
+    font-family: Georgia;
+}
+.body{
+    margin: 100px;
+    padding: 200px;
+}
+.header {
+    height: 35px;
+    width: 107%;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}

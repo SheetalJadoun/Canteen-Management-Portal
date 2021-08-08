@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="header">
+        <span>Canteen Management system</span>
+    </div>
+    <div class="container">
+        <h2 class="head">Master List</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Item name</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr *ngFor="let it of item"> -->
+                <tr *ngFor="let it of item">
+                    <td>{{it.id}}</td>
+                    <td>{{it.name}}</td>
+                    <td>{{it.price}}</td>
+                    <td>
+                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                            (click)="edit(it)">EditItem</button>&nbsp; -->
+                        <button type="button" class="btn btn-danger" (click)="deleteItem(it)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-success" routerLink="/admin/addMasterItem">Add new
+            Item</button>&nbsp;
+        <button class="float-right" type="button" class="btn btn-success" routerLink="/admin">Back</button>
+    </div>
+</div>

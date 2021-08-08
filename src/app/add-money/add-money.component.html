@@ -1,0 +1,28 @@
+<div class="header">
+    <span>Canteen Management system</span>
+</div>
+<div class="container">
+    <form #add="ngForm" (ngSubmit)="addMoney()" class="form">
+        <h1 style="text-align: center;font-family: Georgia; font-weight: bold; ">Wallet</h1>
+        <div class="row">
+            <div class="form-group">
+
+                <input type="number" class="form-control" placeholder="Enter Amount that you want to add in wallet"
+                    name="wallet" [(ngModel)]="user.walletAmt" required #wallet="ngModel"
+                    [class.is-invalid]="wallet.invalid && wallet.touched">
+                <small class="text-danger" [class.d-none]="wallet.valid || wallet.untouched">Please Enter Initial
+                    Wallet Amount
+
+                </small>
+            </div>
+
+        </div>
+        <div>
+            <button id="add" class="float-right" [disabled]="add.form.invalid" type="submit" class="btn btn-success">
+                submit
+            </button>
+            <button id="back" class="float-right" type="button" class="btn btn-success"
+                routerLink="/employee/viewBalance">Back</button>
+        </div>
+    </form>
+</div>

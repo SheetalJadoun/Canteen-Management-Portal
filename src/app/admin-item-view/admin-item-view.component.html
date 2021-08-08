@@ -1,0 +1,80 @@
+<div class="container">
+    <div class="header">
+        <span>Canteen Management system</span>
+    </div>
+    <div class="container">
+        <h2 class="head">Today's Special</h2>
+        <div class="main-container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Item name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr *ngFor="let it of item"> -->
+                    <tr *ngFor="let it of item">
+                        <td>{{it.id}}</td>
+                        <td>{{it.name}}</td>
+                        <td>{{it.quantity}}</td>
+                        <td>{{it.price}}</td>
+                        <td>
+                            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                            (click)="edit(it)">EditItem</button>&nbsp; -->
+                            <button type="button" class="btn btn-danger" (click)="deleteItem(it)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button type="button" class="btn btn-success" routerLink="/admin/addItem">Add new
+            Item</button>&nbsp;
+        <button class="float-right" type="button" class="btn btn-success" routerLink="/admin">Back</button>
+
+    </div>
+</div>
+<!-- Modal form -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Item</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form #updateForm="ngForm" (ngSubmit)="updateItem()">
+                    <div class="form-group">
+                        <label for="id">Id :</label>
+                        <input type="text" disabled #id [(ngModel)]="itemtoUpdate.id" name="id" id="id"
+                            class="form-control" placeholder="Id">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Student Name :</label>
+                        <input type="text" #name [(ngModel)]="itemtoUpdate.name" name="name" id="name"
+                            class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Student Address :</label>
+                        <input type="text" #quantity [(ngModel)]="itemtoUpdate.quantity" name="quantity" id="quantity"
+                            class="form-control" placeholder="Quantity">
+                    </div>
+                    <div class="form-group">
+                        <label for="percentage">Student Percentage :</label>
+                        <input type="number" #price [(ngModel)]="itemtoUpdate.price" name="price" id="percentage"
+                            class="form-control" placeholder="Price">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Update" class="btn btn-primary w-100">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+table,th,td{
+    border:3px double rgb(76, 76, 77);
+}
+td,th{
+    text-align: center;
+}
+tr:hover{
+    background-color: azure;
+}
+th{
+    background-color: rgb(128, 128, 211);
+    color: whitesmoke;
+}
+.head{
+    font-family: Georgia;
+    float: inline-end;
+    color: rgb(128, 128, 211);
+    text-align: center;
+}
+.btn:hover{
+    background-color: rgb(204, 243, 30);
+    color: white;
+}
+.header {
+    height: 35px;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}

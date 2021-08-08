@@ -1,0 +1,51 @@
+<div class="img">
+    <div class="header">
+        <span>Canteen Management system</span>
+    </div>
+    <div class="content">
+        <h1>Welcome</h1>
+        <p>
+            Your food is ready !
+        </p>
+    </div>
+    <div>
+        <button class="out" (click)="signout()">
+
+            Sign out
+        </button>
+    </div>
+    <div class="body">
+        <div class="span1">
+            <a href="/viewItems" routerLink="/employee/viewItems" class="btn">
+                <i class="icon-pencil icon-white"></i>
+                <span><strong>Today's Special</strong></span>
+            </a>
+            <!-- <button class="btn">
+                <a href="/viewItems" routerLink="/employee/viewItems">Today's Special</a>
+            </button> -->
+        </div>
+        <!-- <div class="span1">
+            <a href="" class="btn">
+                <i class="icon-eye-open icon-white"></i>
+                <span><strong>Transaction Details</strong></span>
+            </a>
+        </div> -->
+        <div class="span1">
+            <a href="/viewBalance" routerLink="/employee/viewBalance" class="btn">
+                <i class="icon-edit icon-white"></i>
+                <span><strong>View Balance</strong></span>
+            </a>
+        </div>
+        <div class="span1">
+            <a href="#" class="btn" routerLink="/employee/masterItems">
+                <i class="icon-eye-open icon-white"></i>
+                <span><strong>Master View</strong></span>
+            </a>
+        </div>
+
+    </div>
+    <div class="footer">
+
+    </div>
+</div>
+<router-outlet></router-outlet>

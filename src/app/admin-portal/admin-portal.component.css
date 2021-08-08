@@ -1,0 +1,78 @@
+.header {
+    margin: 20px;
+    height: 35px;
+    width: 97%;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+  .footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 20px;
+    width: 100%;
+  }
+  .img{
+    background: url(../../assets/white-admin.jpg);
+    background-size: 100%;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(150vh - 103px);
+}
+.body{
+    margin: 100px;
+    padding: 100px;
+    display: flex;
+}
+.span1{
+    margin:40px;
+    margin-left:80px;
+    padding: 10px;
+    width: 200px;
+}
+.span{
+    width: 100px;
+}
+.content{
+        height: 35px;
+        width: 100%;
+        font-size: 1.2rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 120px;
+        color: rgb(44, 44, 42);
+}
+.btn{
+    cursor: pointer;
+    /* border: 1px solid #3498db; */
+    height: 100px;
+    color: #060607;
+    font-size: 1.5em;
+
+    /* box-shadow: 0 6px 6px rgba(0,0,0,0.6); */
+}
+.btn :hover{
+    color: rgb(241, 12, 12);
+    border: 1px solid #1328e4;
+}
+.out{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2px;
+    font-size: 8pt;
+    margin-top: 1px;
+    width: 100px;
+    border: 1px solid #f8505e;
+    background-color: #f8505e;
+    color: #1a1818;
+    font-size: 1.2em;
+    box-shadow: 0 6px 6px rgba(240, 39, 39, 0.6);
+}
+.out:hover{
+    color: #0e1f07;
+    background-color: #c05059;
+}

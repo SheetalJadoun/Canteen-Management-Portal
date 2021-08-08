@@ -1,0 +1,38 @@
+<div class="header">
+    <span>Canteen Management system</span>
+</div>
+<div class="container">
+    <div class="container">
+        <h2 class="head">Manage Employees</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>UserName</th>
+                    <th>emailId</th>
+                    <th>Role</th>
+                    <th>Wallet Amount</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr *ngFor="let it of item"> -->
+                <tr *ngFor="let it of user">
+                    <td>{{it.id}}</td>
+                    <td>{{it.userName}}</td>
+                    <td>{{it.emailId}}</td>
+                    <td>{{it.role}}</td>
+                    <td>{{it.walletAmt}}</td>
+                    <td>
+                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                            (click)="edit(it)">EditItem</button>&nbsp; -->
+                        <button type="button" class="btn btn-danger" (click)="deleteItem(it)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- <button type="button" class="btn btn-success" routerLink="/admin/addItem">Add new
+            Item</button>&nbsp; -->
+        <button class="float-right" type="button" class="btn btn-success" routerLink="/admin">Back</button>
+    </div>
+</div>

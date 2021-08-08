@@ -1,0 +1,39 @@
+table,th,td{
+    border:3px double rgb(76, 76, 77);
+}
+
+td,th{
+    text-align: center;
+}
+tr:hover{
+    background-color: azure;
+}
+th{
+    background-color: rgb(128, 128, 211);
+    color: whitesmoke;
+}
+.head{
+    font-family: Georgia;
+    float: inline-end;
+    color: rgb(128, 128, 211);
+    text-align: center;
+}
+.btn:hover{
+    background-color: rgb(204, 243, 30);
+    color: white;
+}
+/* .img{
+    background-color: rgb(238, 191, 191);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(150vh - 103px);
+    background-size: 100%;
+    width: auto;
+} */
+.header1 {
+    height: 35px;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}

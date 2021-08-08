@@ -1,0 +1,31 @@
+<div class="header">
+    <span>Canteen Management system</span>
+</div>
+<div class="container">
+    <div class="container">
+        <h2 class="head">Master List</h2>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Item name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr *ngFor="let it of item"> -->
+                <tr *ngFor="let it of item">
+                    <td>{{it.id}}</td>
+                    <td>{{it.name}}</td>
+                    <td>{{it.quantity}}</td>
+                    <td>{{it.price}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-success" routerLink="/employee">Back</button>
+    </div>
+</div>

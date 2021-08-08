@@ -1,0 +1,43 @@
+/* .img{
+    background: url(../../assets/bg4.jpg);
+    background-size: 100%;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(150vh - 103px);
+} */
+.form{
+    flex-direction: column;
+    margin: auto;
+    padding: 150px;
+    padding-left: 300px;
+    align-items: center;
+    width: 900px;
+    color: rgb(24, 24, 23);
+    font-weight: bold;
+    font-size: larger;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    color: blueviolet;
+    background-color: azure;
+}
+.body{
+    margin: 100px;
+    padding: 200px;
+}
+/* .container{
+    background-color: azure;
+} */
+.btn{
+    display:inline-flex;
+    align-self: center;
+    margin: 20px;
+    margin-right: 20px;
+}
+.header {
+    height: 35px;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}

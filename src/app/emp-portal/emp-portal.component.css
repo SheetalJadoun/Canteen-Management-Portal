@@ -1,0 +1,82 @@
+
+  .footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 20px;
+    width: 100%;
+  }
+  .img{
+    background: url(../../assets/emp-p-2.jpg);
+    background-size: 100%;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(150vh - 103px);
+}
+.body{
+    margin: 100px;
+    padding: 20px;
+    display: flex;
+}
+.span1{
+    margin:5px;
+    margin-left:150px;
+    padding: 5px;
+}
+.span1:hover{
+    /* background-color: #e5ece3; */
+    color: #f8505e;
+    border: #1a1818;
+}
+.content{
+        height: 35px;
+        width: 100%;
+        font-size: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 120px;
+        color: rgb(17, 17, 16);
+}
+.btn{
+    cursor: pointer;
+    border: 1px solid #111111;
+    height: 80px;
+    color: #0a0a0a;
+    font-size: 1.5em;
+    border: #1a1818;
+    box-shadow: 0 6px 6px rgba(3, 3, 3, 0.6);
+}
+.btn :hover{
+    color: rgb(216, 58, 58);
+    border: 1px solid #c0c5bd;
+    border-color: #e6ebee;
+    
+}
+.out{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2px;
+    font-size: 8pt;
+    margin-top: 1px;
+    width: 100px;
+    border: 1px solid #f8505e;
+    background-color: #f8505e;
+    color: #1a1818;
+    font-size: 1.2em;
+    box-shadow: 0 6px 6px rgba(240, 39, 39, 0.6);
+}
+.out:hover{
+    color: #0e1f07;
+    background-color: #c05059;
+}
+.header {
+    height: 35px;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(13, 14, 13);
+}

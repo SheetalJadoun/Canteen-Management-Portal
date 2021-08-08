@@ -1,0 +1,48 @@
+<div class="img">
+
+    <div class="content">
+        <div class="header">
+            <span>Canteen Management system</span>
+        </div>
+        <h1>Welcome to Admin Portal</h1>
+    </div>
+    <div>
+        <button class="out" (click)="signout()">
+
+            Sign out
+        </button>
+    </div>
+    <div class="body">
+        <div class="span1">
+            <a href="/viewItemsAdm" class="btn" routerLink="/admin/viewItemsAdm">
+                <i class="icon-pencil icon-white"></i>
+                <span style="width: 100px;"><strong>Today's Special</strong></span>
+            </a>
+            <!-- <button class="btn">
+                <a href="/viewItems">Today's Special</a>
+            </button> -->
+        </div>
+        <div class="span1">
+            <a href="#" class="btn" routerLink="/admin/manageEmp">
+                <i class="icon-eye-open icon-white"></i>
+                <span style="width: 100px;"><strong>Manage Employee</strong></span>
+            </a>
+        </div>
+        <div class="span1">
+            <a href="" class="btn" routerLink="/admin/viewMasterItemsAdm">
+                <i class="icon-edit icon-white"></i>
+                <span style="width: 100px;"><strong>Master List</strong></span>
+            </a>
+        </div>
+        <div class="span1">
+            <a href="" class="btn" routerLink="/admin/allTransaction">
+                <i class="icon-edit icon-white"></i>
+                <span style="width: 100px;"><strong>Transation Details</strong></span>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</div>
+<router-outlet></router-outlet>

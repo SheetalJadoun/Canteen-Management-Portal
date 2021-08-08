@@ -1,0 +1,52 @@
+.img{
+    background: url('../../assets/register-3.jpg');
+    background-size: 100%;
+    /* width: auto; */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(150vh - 103px);
+    background-color: rgba(253, 255, 247, 0.4);
+    
+}
+.main-container{
+    margin-right: 100px;
+    left: 100px;
+    right: auto;
+    align-items: center;
+    align-content: center;
+    border: #1a1818;
+    /* box-shadow: 0 6px 6px rgba(3, 3, 3, 0.6); */
+    font-family: Georgia;
+}
+/* .form-header{
+    background-color: rgb(44, 68, 88);
+} */
+.form{
+    flex-direction: column;
+    margin: auto;
+    padding: 150px;
+    padding-left: 300px;
+    align-items: center;
+    width: 900px;
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+    font-size: larger;
+    font-family: Georgia;
+}
+.body{
+    margin: 100px;
+    padding: 200px;
+}
+.header {
+    height: 35px;
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    /* margin: 10px; */
+    padding: 20px;
+}
+.role{
+    font-style: normal;
+
+}
